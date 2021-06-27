@@ -12,9 +12,9 @@
 .deals{
     grid-area: deals;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-direction: row;
-    gap:25px;
+    gap:5vw;
 }
 
 .deals div h3 {
@@ -29,7 +29,6 @@
 }
 .deals div {
     height: 40%;
-    max-height:300px;
     max-width:400px;
 }
 
@@ -142,7 +141,7 @@ form button {
         gap:10px;
         justify-content:center;
         align-items: center;
-        max-width: 800px;
+        max-width: auto;
     }
     .additional ul{
         grid-auto-flow: row;
@@ -155,9 +154,8 @@ form button {
         padding : 5px;
     }
 
-    .additional legend{
-    }
     main form {
         width: 90vw;
+        max-width: 600px;
     }
 }

@@ -1,7 +1,7 @@
 
 .home {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: 90vh auto auto auto;
     grid-template-areas: "hero hero hero"
     ". card ."
@@ -25,6 +25,7 @@
 fieldset{
     color:white;
     padding :50px;
+    margin-right: 15px;
     
 }
 
@@ -137,7 +138,7 @@ article button{
     width: 30vw;
 }
 
-@media only screen and (max-width:1270px){
+@media only screen and (max-width:1200px){
 
     .home{
         grid-template-columns: 10% 80% 10%;
@@ -157,14 +158,13 @@ article button{
         flex: 0;
         width:auto;
     }
+    .visit div h3{
+        height:7vh ;
 
+    }
     fieldset{
         width: calc(100vw - 40px);
     }
-    .visit {
-        flex-direction:column;
-    }
-
     .letter {
         flex-direction: column;
         height:calc(15vh-25px);
@@ -172,4 +172,17 @@ article button{
         gap :5px;
         
     }
+}
+
+@media only screen and (max-width:800px){
+
+    .visit {
+        flex-direction:column;
+        gap :10px;
+    }
+    .visit div h3{
+        height:auto;
+
+    }
+
 }

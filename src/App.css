@@ -31,7 +31,6 @@ body {
 body, ul, ol, dl {
 	margin: 0;
 }
-
 .app{
   display: grid;
   grid-template-rows: auto auto 20vh;
