@@ -1,0 +1,175 @@
+
+.home {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 90vh auto auto auto;
+    grid-template-areas: "hero hero hero"
+    ". card ."
+    ". visit ."
+    "letter letter letter";
+}
+
+.main-hero {
+    background-image : url("../../images/heroMain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width:100vw;
+    height:100%;
+    grid-area: hero;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+fieldset{
+    color:white;
+    padding :50px;
+    
+}
+
+legend{
+    color:white;
+}
+
+.card{
+    grid-area:card;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    border: 1px solid var(--color-bg-secondary);
+}
+.card header img {
+    width:calc(100% + 1px); 
+    height: calc(100% + 2px);
+}
+.card header{
+    flex: 1 1 0;
+    width: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card article{
+    padding : 20px;
+    padding-left:10px;
+    padding-top: 30px;
+    font-size:1rem;
+    flex: 1 1 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+article h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+    font-weight: 750;
+}
+article button{
+    margin-top:auto;
+    align-self: center;
+    height: 50px;
+}
+.visit{
+    grid-area:visit;
+    display: flex;
+    flex-direction:row;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.visit div h3 {
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.visit div p {
+    font-size: 16px;
+}
+
+.letter{
+    grid-area: letter;
+    margin :30px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border:1px solid grey;
+    padding : 30px;
+    flex-direction:row;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.letter h2 {
+    font-size:30px;
+    font-weight: 550;
+    padding-right: 80px;
+}
+
+.letter div {
+    display: flex;
+    flex-direction:row;
+    gap: 3px;
+}
+
+.letter button {
+    color: white;
+    font-weight: 600;
+    background-color:var(--color-secondary);
+    outline:none;
+    border:none;
+    cursor: pointer;
+    border-radius:2px;
+    padding:10px;
+}
+.letter input {
+    border-radius: 0;
+    outline:none;
+    border: 0.5px solid grey;
+    padding:12px;
+    font-size:15px;
+    width: 30vw;
+}
+
+@media only screen and (max-width:1270px){
+
+    .home{
+        grid-template-columns: 10% 80% 10%;
+    }
+    .card {
+        flex-direction: column;
+        height:auto;
+
+    }
+
+    .card header {
+        flex: 0;
+        width:auto;
+    }
+
+    .card article {
+        flex: 0;
+        width:auto;
+    }
+
+    fieldset{
+        width: calc(100vw - 40px);
+    }
+    .visit {
+        flex-direction:column;
+    }
+
+    .letter {
+        flex-direction: column;
+        height:calc(15vh-25px);
+        padding-top:30px;
+        gap :5px;
+        
+    }
+}

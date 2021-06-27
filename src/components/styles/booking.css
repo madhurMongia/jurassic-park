@@ -1,0 +1,163 @@
+
+.booking{
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: ". deals ."
+    "main main main"
+    ". add .";
+}
+
+.deals{
+    grid-area: deals;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap:25px;
+}
+
+.deals div h3 {
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.deals div p {
+    font-size: 16px;
+}
+.deals div {
+    height: 40%;
+    max-height:300px;
+    max-width:400px;
+}
+
+.booking main{
+    grid-area:main;
+    margin-top:5vh;
+    margin-bottom: 5vh;
+    width:100vw;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image : url("../../images/booking.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top :50px;
+    margin-bottom: 50px;
+    gap : 0.5rem;
+    width: 60vw;
+    max-width:700px;
+    padding:30px;
+    background-color: rgba(0, 0, 0, 0.78);
+    color :white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.5px var(--color-bg-primary);
+}
+
+form label{
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding-left:20px;
+}
+
+form input {
+    height:auto;
+    width: 85%;
+    max-width: 400px;
+    border-radius: 0;
+    border: 3px solid black;
+    padding: 4px 0px 4px 3px;
+
+    outline: none;
+    font-size: 20px;
+    background-color:rgba(255,255,255,0.95);
+
+}
+
+form input:focus{
+    box-shadow: 0px 0px 5px 2px var(--color-bg-secondary);
+}
+
+
+.additional{
+    grid-area:add;
+    justify-self: center;
+    margin-bottom:20px;
+}
+
+.additional ul{
+    list-style-image: url("../../images/arrow.png");
+    list-style-position: inside;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap :50px;
+    row-gap: 10px;
+}
+
+.additional fieldset{
+    color:black;
+    border-radius: 3px;
+    border:3px solid black;
+    width: 90vw;
+    
+}
+.additional legend{
+    color:black;
+    font-weight:600;
+    padding :0px 1px 0px 1px;
+}
+form button {
+    margin-top:10px;
+    background-color:rgba(255,255,255,0.95);
+    padding:8px;
+    font-weight: 550;
+    font-size: 15px;
+    outline:none;
+    border: none;
+    color:black;
+    width:50%;
+
+}
+
+@media only screen and (max-width:800px){
+
+    .booking {
+        grid-template-columns: auto auto auto;
+    }
+    .deals{
+        margin-top:0px;
+        flex-direction:column;
+        gap:10px;
+        justify-content:center;
+        align-items: center;
+        max-width: 800px;
+    }
+    .additional ul{
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+
+    }
+
+    .additional fieldset{
+        border:0px solid black;
+        padding : 5px;
+    }
+
+    .additional legend{
+    }
+    main form {
+        width: 90vw;
+    }
+}

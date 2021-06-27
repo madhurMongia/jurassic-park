@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: myfont;
+  src: url('./fonts/KurriIslandPersonalLight-0Wlrv.ttf');
+}
+:root {
+  --color-primary:#ECDBBA;
+  --color-secondary:#C84B31;
+  --color-bg-primary:#161616;
+  --color-bg-secondary:#346751;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+	min-height: 100%;
+	background: #fff;
+	color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	
+body {
+	font-size: 1.4rem;
+	text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+	
+body, ul, ol, dl {
+	margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app{
+  display: grid;
+  grid-template-rows: auto auto 20vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+  "content"
+  "footer";
 }
 
-.App-link {
-  color: #61dafb;
+header{
+  grid-area: header;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+  grid-area:content;
 }
+
+.footer{
+  grid-area:footer;
+  background:var(--color-bg-primary);
+  bottom:0;
+}
+
