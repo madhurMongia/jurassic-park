@@ -1,6 +1,5 @@
 {
   "name": "dev-start",
-  "homepage": "https://madhurMongia.github.io/dev-start",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -35,16 +35,16 @@ export function Navbar() {
             <Link className="item item-1" to='/'>
               Home
             </Link>
-            <Link className="item item-2" to='./events'>
+            <Link className="item item-2" to='/events'>
               Events
             </Link>
-            <Link className="item item-3" to='./gallery'>
+            <Link className="item item-3" to='/gallery'>
               Gallery
             </Link>
-            <Link className="item item-4" to='./booking'>
+            <Link className="item item-4" to='/booking'>
               Booking
             </Link>
-            <Link className="item item-5" to='./about'>
+            <Link className="item item-5" to='/about'>
               About
             </Link>
             <button className="btn">
