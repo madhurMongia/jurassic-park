@@ -1,0 +1,42 @@
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+    grid-template-rows: repeat(auto-fill,auto);
+    padding:20px;
+    background-color:black;
+
+}
+
+.gallery-image{
+    display:inline-block;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.gallery-image img{
+    width:100%;
+    transition: 0.25s ease-in-out;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-image h1 {
+    position: absolute;
+    padding:5px;
+    margin:5px;
+    font-size: 25px;
+    background-color:#5c5c5c;
+    color:white;
+    border-radius:5px;
+    opacity:0;
+    z-index: 1;
+    transition: 0.25 ease-in-out;
+}
+
+.gallery-image:hover h1{
+    opacity: 0.5;
+}

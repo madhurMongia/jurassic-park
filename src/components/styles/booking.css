@@ -48,7 +48,7 @@
     background-position: 50% 0;
 }
 
-form {
+.booking main form {
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -65,13 +65,13 @@ form {
     box-shadow: 0px 0px 10px 0.5px var(--color-bg-primary);
 }
 
-form label{
+.booking main form label{
     justify-self: flex-start;
     align-self: flex-start;
     padding-left:20px;
 }
 
-form input {
+.booking main form input {
     height:auto;
     width: 85%;
     max-width: 400px;
@@ -85,7 +85,7 @@ form input {
 
 }
 
-form input:focus{
+.booking main form input:focus{
     box-shadow: 0px 0px 5px 2px var(--color-bg-secondary);
 }
 
@@ -117,7 +117,7 @@ form input:focus{
     font-weight:600;
     padding :0px 1px 0px 1px;
 }
-form button {
+.booking main form button {
     margin-top:10px;
     background-color:rgba(255,255,255,0.95);
     padding:8px;
@@ -126,6 +126,7 @@ form button {
     outline:none;
     border: none;
     color:black;
+    cursor: pointer;
     width:50%;
 
 }
@@ -154,8 +155,7 @@ form button {
         padding : 5px;
     }
 
-    main form {
+    .booking main form {
         width: 90vw;
-        max-width: 600px;
     }
 }
