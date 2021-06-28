@@ -1,10 +1,11 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route ,useLocation} from 'react-router-dom';
 import "./App.css";
 import { Home, About, Events, Gallery, Booking, Navbar, Footer } from "./components/index";
 // #776857  #2b5133 #333035 #371108 #000000
 
 function App() {
+
   return (
     <div class="app">
       <header>
