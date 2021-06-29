@@ -181,3 +181,17 @@
          height: 300px;
      }
 }
+@media only screen and (max-width:700px){
+
+    .touch p {
+        display:none;
+    }
+
+    .touch .email {
+       width: 80vw;
+    }
+
+    .touch .msg {
+        width: 80vw;
+     }
+}

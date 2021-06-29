@@ -54,8 +54,8 @@ export default function About() {
                <form onSubmit = {handleSubmit}>
                    <p id = "email">E-mail</p>
                    <p htmlFor="msg" id = "msg">message</p>
-                   <input type="text" className="email" ref = {emailRef}/>
-                   <textarea type="textarea" className="msg" ref = {msgRef}/>
+                   <input type="text" className="email" ref = {emailRef} placeholder = "Email"/>
+                   <textarea type="textarea" className="msg" ref = {msgRef} placeholder = "message"/>
                    <button className = "btn1">Submit</button>
                </form>
            </section>

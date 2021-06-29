@@ -14,7 +14,7 @@ export function Navbar() {
       }
     })
   })
-  const [toggle, setToggle] = React.useState(true);
+  const [toggle, setToggle] = React.useState(window.innerWidth >640?true:false);
 
   function handleToggle() {
     setToggle(prev => !prev)

@@ -167,7 +167,6 @@ article button{
     }
     .letter {
         flex-direction: column;
-        height:calc(15vh-25px);
         padding-top:30px;
         gap :5px;
         
@@ -183,6 +182,11 @@ article button{
     .visit div h3{
         height:auto;
 
+    }
+    .letter h2 {
+        font-size:25px;
+        font-weight: 500;
+        padding-right: auto;
     }
 
 }
